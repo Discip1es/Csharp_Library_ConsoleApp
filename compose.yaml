@@ -1,0 +1,7 @@
+
+services:
+  libraryapp:
+    image: libraryapp
+    build:
+      context: .
+      dockerfile: src/LibraryApp/Dockerfile

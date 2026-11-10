@@ -1,0 +1,11 @@
+
+services:
+  libraryapp:
+    image: libraryapp
+    build:
+      context: .
+      dockerfile: src/LibraryApp/Dockerfile
+      args:
+        - configuration=Debug
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
